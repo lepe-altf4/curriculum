@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+        font-family: "Sansita", serif;
+        font-weight: 400;
+        font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1C1C2E; 
+    overflow: hidden;
+}
+
+.contenedor {
+    display: flex;
+    max-width: 950px;
+    width: 100%;
+    min-height: 65vh;
+    box-shadow: 0 5px 8px rgb(200, 0, 0); 
+}
+
+.columna-izquierda {
+    background-color: #2A2F45; 
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+    animation: slideInLeft 1.5s ease;
+    color: #E0E0E0;
+}
+
+p, li {
+    font-size: 1.1rem; 
+    color: #E0E0E0; 
+}
+
+.columna-derecha {
+    background-color: #FFFFFF; 
+    width: 65%;
+    padding: 30px;
+    animation: fadeIn 1.9s ease;
+}
+.contacto p, .educacion p, .habilidades ul li {
+    color: #FFFFFF;
+    font-size: 1.1rem; 
+}
+
+.imagen img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    animation: rotateIn 1.5s ease;
+    border: 1.9px solid #0A84FF;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #0A84FF; 
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.contacto, .educacion, .habilidades, .mi, .experiencia {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #0A84FF; 
+    border-bottom: 2px solid #0A84FF; 
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    font-size: 1rem;
+    color: #333;
+}
+
+p, li {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
