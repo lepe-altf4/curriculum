@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", serif;
+    background-color: #1C1C2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #2A2F45;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #E0E0E0;
+    width: 90%;
+    max-width: 400px;
+}
+
+form h1 {
+    color: #0A84FF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0A84FF;
+    border-radius: 5px;
+    background-color: #1C1C2E;
+    color: #E0E0E0;
+}
+
+
+
+.volver-principal {
+    display: block;
+    text-align: center;
+    color: #0A84FF;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 5;
+        transform: translateY(0);
+    }
+}
+
+.animar {
+    animation: aparecer 2s ease-out;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    
+  
+    
+    
+}
+
+
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0A84FF;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}

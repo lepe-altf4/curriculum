@@ -21,9 +21,10 @@ body {
     display: flex;
     max-width: 950px;
     width: 100%;
-    min-height: 65vh;
-    box-shadow: 0 5px 8px rgb(200, 0, 0); 
+    min-height: 25vh;
+    box-shadow: 0 5px 8px rgb(200, 0, 0);
 }
+
 
 .columna-izquierda {
     background-color: #2A2F45; 
@@ -35,8 +36,8 @@ body {
 }
 
 p, li {
-    font-size: 1.1rem; 
-    color: #E0E0E0; 
+    font-size: 1.25rem; 
+    color: #635b5b; 
 }
 
 .columna-derecha {
@@ -47,7 +48,6 @@ p, li {
 }
 .contacto p, .educacion p, .habilidades ul li {
     color: #FFFFFF;
-    font-size: 1.1rem; 
 }
 
 .imagen img {
@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #444;
     margin-bottom: 20px;
 }
@@ -92,10 +92,6 @@ h3 {
     color: #333;
 }
 
-p, li {
-    font-size: 1rem;
-    color: #555;
-}
 
 
 @keyframes slideInLeft {
@@ -127,7 +123,25 @@ p, li {
     }
 }
 
+.boton-lindo {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 14px 14px;
+    color: white;
+    background-color: #0A84FF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-align: center;
+}
 
+.boton-lindo:hover {
+    background-color: #007BFF;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 
 
